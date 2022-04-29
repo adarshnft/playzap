@@ -6,20 +6,8 @@
     <title>Unity WebGL Player | webHook Check</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script type="text/javascript">
-      function loaderFun()
-      {
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const loader = urlParams.get('loader')
-        if(loader)
-        {
-        console.log(loader);
-        }
-      }
-    </script>
   </head>
-  <body onLoad="loaderFun()">
+  <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
